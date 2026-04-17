@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTravel - Discover Incredible India</title>
+    <meta name="description" content="Plan your perfect trip to India with UTravel. Get budget estimates, day-wise itineraries, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">UTravel<span class="dot">.</span></div>
+      <div class="nav-links">
+        <a href="#destinations">Destinations</a>
+        <a href="#budget">Plan Budget</a>
+        <a href="#itinerary">Itinerary</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Discover Incredible India</h1>
+        <p>Your journey begins here. Experience the heritage, culture, and beauty like never before.</p>
+        <div class="hero-buttons">
+          <a href="#destinations" class="btn btn-primary">Explore Cities</a>
+          <a href="#budget" class="btn btn-secondary">Plan Budget</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Destinations -->
+    <section class="destinations" id="destinations">
+      <div class="container">
+        <h2 class="section-title">Choose Your Destination</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-img" style="background-image: url('/mathura.png')"></div>
+            <div class="card-content">
+              <h3>Mathura</h3>
+              <p>The birthplace of Lord Krishna. Experience spirituality, vibrant culture, and ancient ghats.</p>
+              <button class="btn btn-outline">Explore</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img" style="background-image: url('/agra.png')"></div>
+            <div class="card-content">
+              <h3>Agra</h3>
+              <p>Home to the majestic Taj Mahal. A city of love, rich Mughal architecture, and heritage.</p>
+              <button class="btn btn-outline">Explore</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img" style="background-image: url('/delhi.png')"></div>
+            <div class="card-content">
+              <h3>Delhi</h3>
+              <p>The capital city where ancient history meets modern lifestyle. Explore monuments and street food.</p>
+              <button class="btn btn-outline">Explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title">Everything You Need to Plan Better</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <h4>Day-wise Itinerary</h4>
+            <p>Perfectly crafted schedules for your trip.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-calculator"></i>
+            <h4>Budget Estimator</h4>
+            <p>Know exactly how much your trip will cost.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h4>Food Guide</h4>
+            <p>Discover the best local delicacies.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-camera-retro"></i>
+            <h4>Tourist Places</h4>
+            <p>Must-visit attractions and hidden gems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Budget Estimator -->
+    <section class="budget-estimator" id="budget">
+      <div class="container">
+        <div class="budget-wrapper">
+          <div class="budget-form-container">
+            <h2 class="section-title text-left">Budget Estimator</h2>
+            <form id="budget-form">
+              <div class="form-group">
+                <label>Select City</label>
+                <select id="b-city">
+                  <option value="mathura">Mathura</option>
+                  <option value="agra">Agra</option>
+                  <option value="delhi">Delhi</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Days (1-3)</label>
+                  <input type="number" id="b-days" min="1" max="3" value="2">
+                </div>
+                <div class="form-group">
+                  <label>Travelers</label>
+                  <input type="number" id="b-people" min="1" value="2">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Travel Style</label>
+                <select id="b-style">
+                  <option value="budget">Budget</option>
+                  <option value="standard" selected>Standard</option>
+                  <option value="luxury">Luxury</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Calculate Budget</button>
+            </form>
+          </div>
+          <div class="budget-results-container" id="budget-results" style="display: none;">
+            <h3>Estimated Cost</h3>
+            <div class="total-cost" id="total-cost">₹0</div>
+            <div class="cost-breakdown" id="cost-breakdown">
+              <!-- breakdown items will be injected here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Itinerary Timeline -->
+    <section class="itinerary" id="itinerary">
+      <div class="container">
+        <h2 class="section-title">Itinerary: Delhi Experience</h2>
+        <div class="tabs">
+          <button class="tab-btn active" data-day="1">Day 1</button>
+          <button class="tab-btn" data-day="2">Day 2</button>
+          <button class="tab-btn" data-day="3">Day 3</button>
+        </div>
+        <div class="timeline-container" id="timeline-container">
+          <!-- timeline items injected here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <h3>UTravel<span class="dot">.</span></h3>
+          <p>Crafting unforgettable journeys across India.</p>
+        </div>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 UTravel Team. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
