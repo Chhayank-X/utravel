@@ -21,6 +21,17 @@ const breakdownPct = {
   activities: 0.15
 };
 
+const mapIframe = document.getElementById('city-map');
+const mapCityName = document.getElementById('map-city-name');
+const citySelect = document.getElementById('b-city');
+
+citySelect.addEventListener('change', (e) => {
+  const city = e.target.value;
+  const cityName = city.charAt(0).toUpperCase() + city.slice(1);
+  mapCityName.textContent = cityName;
+  mapIframe.src = `https://maps.google.com/maps?q=${cityName},India&t=&z=12&ie=UTF8&iwloc=&output=embed`;
+});
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   
