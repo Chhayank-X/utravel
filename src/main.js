@@ -32,6 +32,9 @@ citySelect.addEventListener('change', (e) => {
   mapIframe.src = `https://maps.google.com/maps?q=${cityName},India&t=&z=12&ie=UTF8&iwloc=&output=embed`;
 });
 
+// Initialize map state to match current select value
+citySelect.dispatchEvent(new Event('change'));
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   
