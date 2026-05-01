@@ -154,7 +154,6 @@ a {
   background-color: transparent;
   color: var(--accent-orange);
   border: 1px solid var(--accent-orange);
-  padding: 10px 24px;
 }
 .btn-outline:hover {
   background-color: var(--accent-orange);
