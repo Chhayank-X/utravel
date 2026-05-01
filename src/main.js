@@ -247,3 +247,13 @@ if (loginForm) {
 
 // Initialize map state to match current select value
 citySelect.dispatchEvent(new Event('change'));
+
+// Destination Cards Click Logic
+const destinationCards = document.querySelectorAll('.destination-card');
+destinationCards.forEach(card => {
+  card.addEventListener('click', () => {
+    const city = card.dataset.city;
+    localStorage.setItem('selectedCity', city);
+    window.location.href = 'places.html';
+  });
+});
