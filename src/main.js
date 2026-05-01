@@ -50,8 +50,6 @@ citySelect.addEventListener('change', (e) => {
   }
 });
 
-// Initialize map state to match current select value
-citySelect.dispatchEvent(new Event('change'));
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -206,3 +204,45 @@ tabs.forEach(tab => {
     renderTimeline(tab.dataset.day);
   });
 });
+
+// Login Modal Logic
+const loginBtn = document.getElementById('nav-login-btn');
+const loginModal = document.getElementById('login-modal');
+const closeBtn = document.getElementById('modal-close-btn');
+const loginForm = document.getElementById('login-form');
+
+if (loginBtn && loginModal && closeBtn) {
+  loginBtn.addEventListener('click', () => {
+    loginModal.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    loginModal.classList.remove('active');
+  });
+
+  // Close modal if clicking outside content
+  loginModal.addEventListener('click', (e) => {
+    if (e.target === loginModal) {
+      loginModal.classList.remove('active');
+    }
+  });
+}
+
+if (loginForm) {
+  loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // Simulate login
+    if (loginBtn) {
+      loginBtn.textContent = 'My Account';
+      loginBtn.style.backgroundColor = 'var(--accent-orange)';
+      loginBtn.style.color = 'white';
+    }
+    if (loginModal) {
+      loginModal.classList.remove('active');
+    }
+    alert('Successfully logged in!');
+  });
+}
+
+// Initialize map state to match current select value
+citySelect.dispatchEvent(new Event('change'));
