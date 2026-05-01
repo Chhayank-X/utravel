@@ -8,7 +8,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         hotels: resolve(__dirname, 'hotels.html'),
-        places: resolve(__dirname, 'places.html')
+        places: resolve(__dirname, 'places.html'),
+        food: resolve(__dirname, 'food.html')
       }
     }
   }
