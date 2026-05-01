@@ -2,22 +2,22 @@ import './style.css';
 
 const foodData = {
   mathura: [
-    { name: "Brijwasi Sweets", type: "Sweet Shop", timings: "7:00 AM - 10:00 PM", avgCost: "₹200 for two", img: "/utravel/mathura.png", desc: "The most famous sweet shop in Mathura. A must-visit to try their legendary Mathura Peda and milk sweets." },
-    { name: "Oma Pehalwan Kachori", type: "Street Food", timings: "6:00 AM - 2:00 PM", avgCost: "₹100 for two", img: "/utravel/mathura.png", desc: "Start your morning with crispy Kachoris and spicy Aloo Sabzi, followed by fresh hot Jalebis." },
-    { name: "Shriji Lassi & Rabri", type: "Beverages", timings: "8:00 AM - 11:00 PM", avgCost: "₹150 for two", img: "/utravel/mathura.png", desc: "Famous for their extremely thick, creamy Lassi topped with malai, and delicious Rabri." },
-    { name: "Bansal Food Court", type: "Restaurant", timings: "11:00 AM - 10:30 PM", avgCost: "₹600 for two", img: "/utravel/mathura.png", desc: "A premium vegetarian multi-cuisine food court perfect for families offering North Indian and South Indian thalis." }
+    { name: "Brijwasi Sweets", type: "Sweet Shop", timings: "7:00 AM - 10:00 PM", avgCost: "₹200 for two", img: "https://loremflickr.com/500/300/indian,sweets?random=1", desc: "The most famous sweet shop in Mathura. A must-visit to try their legendary Mathura Peda and milk sweets." },
+    { name: "Oma Pehalwan Kachori", type: "Street Food", timings: "6:00 AM - 2:00 PM", avgCost: "₹100 for two", img: "https://loremflickr.com/500/300/indian,streetfood?random=2", desc: "Start your morning with crispy Kachoris and spicy Aloo Sabzi, followed by fresh hot Jalebis." },
+    { name: "Shriji Lassi & Rabri", type: "Beverages", timings: "8:00 AM - 11:00 PM", avgCost: "₹150 for two", img: "https://loremflickr.com/500/300/indian,drink,lassi?random=3", desc: "Famous for their extremely thick, creamy Lassi topped with malai, and delicious Rabri." },
+    { name: "Bansal Food Court", type: "Restaurant", timings: "11:00 AM - 10:30 PM", avgCost: "₹600 for two", img: "https://loremflickr.com/500/300/indian,thali?random=4", desc: "A premium vegetarian multi-cuisine food court perfect for families offering North Indian and South Indian thalis." }
   ],
   agra: [
-    { name: "Panchhi Petha", type: "Sweet Shop", timings: "8:00 AM - 10:00 PM", avgCost: "₹300 for two", img: "/utravel/agra.png", desc: "Agra's iconic sweet shop known for its enormous variety of Pethas, including Angoori, Paan, and Kesar flavors." },
-    { name: "Pinch of Spice", type: "Restaurant", timings: "12:00 PM - 11:30 PM", avgCost: "₹1500 for two", img: "/utravel/agra.png", desc: "A highly-rated fine dining restaurant serving the best authentic Mughlai cuisine and curries in the city." },
-    { name: "Deviram Sweets", type: "Street Food", timings: "7:00 AM - 10:00 PM", avgCost: "₹150 for two", img: "/utravel/agra.png", desc: "Famous among locals for the traditional Agra breakfast of Bedai (stuffed puri) with spicy sabzi and Jalebi." },
-    { name: "Mama Chicken Mama Franky", type: "Fast Food", timings: "1:00 PM - 11:00 PM", avgCost: "₹400 for two", img: "/utravel/agra.png", desc: "A highly popular fast-food joint known for their incredible chicken kebabs and frankie rolls." }
+    { name: "Panchhi Petha", type: "Sweet Shop", timings: "8:00 AM - 10:00 PM", avgCost: "₹300 for two", img: "https://loremflickr.com/500/300/indian,sweets?random=5", desc: "Agra's iconic sweet shop known for its enormous variety of Pethas, including Angoori, Paan, and Kesar flavors." },
+    { name: "Pinch of Spice", type: "Restaurant", timings: "12:00 PM - 11:30 PM", avgCost: "₹1500 for two", img: "https://loremflickr.com/500/300/indian,curry?random=6", desc: "A highly-rated fine dining restaurant serving the best authentic Mughlai cuisine and curries in the city." },
+    { name: "Deviram Sweets", type: "Street Food", timings: "7:00 AM - 10:00 PM", avgCost: "₹150 for two", img: "https://loremflickr.com/500/300/indian,breakfast?random=7", desc: "Famous among locals for the traditional Agra breakfast of Bedai (stuffed puri) with spicy sabzi and Jalebi." },
+    { name: "Mama Chicken Mama Franky", type: "Fast Food", timings: "1:00 PM - 11:00 PM", avgCost: "₹400 for two", img: "https://loremflickr.com/500/300/indian,kebab?random=8", desc: "A highly popular fast-food joint known for their incredible chicken kebabs and frankie rolls." }
   ],
   delhi: [
-    { name: "Karim's (Jama Masjid)", type: "Restaurant", timings: "9:00 AM - 1:00 AM", avgCost: "₹800 for two", img: "/utravel/delhi.png", desc: "A historic culinary institution near Jama Masjid serving legendary Mughlai dishes like Mutton Korma and Kebabs." },
-    { name: "Paranthe Wali Gali", type: "Street Food", timings: "9:00 AM - 11:00 PM", avgCost: "₹250 for two", img: "/utravel/delhi.png", desc: "A narrow street in Chandni Chowk famous for its historic shops serving deep-fried stuffed paranthas." },
-    { name: "Sita Ram Diwan Chand", type: "Street Food", timings: "8:00 AM - 6:00 PM", avgCost: "₹200 for two", img: "/utravel/delhi.png", desc: "Widely considered the absolute best place in Delhi to eat authentic, fluffy Chole Bhature." },
-    { name: "Cyber Hub Food Court", type: "Modern Dining", timings: "10:00 AM - 1:00 AM", avgCost: "₹1500 for two", img: "/utravel/delhi.png", desc: "An upscale culinary destination featuring dozens of premium restaurants, cafes, and pubs in one grand location." }
+    { name: "Karim's (Jama Masjid)", type: "Restaurant", timings: "9:00 AM - 1:00 AM", avgCost: "₹800 for two", img: "https://loremflickr.com/500/300/indian,mughlai?random=9", desc: "A historic culinary institution near Jama Masjid serving legendary Mughlai dishes like Mutton Korma and Kebabs." },
+    { name: "Paranthe Wali Gali", type: "Street Food", timings: "9:00 AM - 11:00 PM", avgCost: "₹250 for two", img: "https://loremflickr.com/500/300/indian,paratha?random=10", desc: "A narrow street in Chandni Chowk famous for its historic shops serving deep-fried stuffed paranthas." },
+    { name: "Sita Ram Diwan Chand", type: "Street Food", timings: "8:00 AM - 6:00 PM", avgCost: "₹200 for two", img: "https://loremflickr.com/500/300/indian,cholebhature?random=11", desc: "Widely considered the absolute best place in Delhi to eat authentic, fluffy Chole Bhature." },
+    { name: "Cyber Hub Food Court", type: "Modern Dining", timings: "10:00 AM - 1:00 AM", avgCost: "₹1500 for two", img: "https://loremflickr.com/500/300/restaurant,dining?random=12", desc: "An upscale culinary destination featuring dozens of premium restaurants, cafes, and pubs in one grand location." }
   ]
 };
 
