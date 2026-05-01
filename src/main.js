@@ -29,6 +29,7 @@ let currentCity = 'mathura';
 
 citySelect.addEventListener('change', (e) => {
   const city = e.target.value;
+  localStorage.setItem('selectedCity', city);
   const cityName = city.charAt(0).toUpperCase() + city.slice(1);
   mapCityName.textContent = cityName;
   mapIframe.src = `https://maps.google.com/maps?q=${cityName},India&t=&z=12&ie=UTF8&iwloc=&output=embed`;
