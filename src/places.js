@@ -2,22 +2,22 @@ import './style.css';
 
 const placesData = {
   mathura: [
-    { name: "Shri Krishna Janmabhoomi", type: "Temple", timings: "5:00 AM - 12:00 PM, 4:00 PM - 9:30 PM", entry: "Free", img: "/utravel/mathura.png", desc: "The sacred birthplace of Lord Krishna. A highly revered complex consisting of a prison cell and magnificent temples." },
-    { name: "Dwarkadhish Temple", type: "Heritage", timings: "6:30 AM - 10:30 AM, 4:00 PM - 7:00 PM", entry: "Free", img: "/utravel/mathura.png", desc: "One of the oldest and largest temples in Mathura, famous for its stunning architecture and vibrant aarti." },
-    { name: "Vishram Ghat", type: "Culture", timings: "Open 24 hours (Evening Aarti at 7 PM)", entry: "Free", img: "/utravel/mathura.png", desc: "The most important ghat along the river Yamuna, where Lord Krishna is believed to have rested." },
-    { name: "Govardhan Hill", type: "Nature & Spiritual", timings: "Open 24 hours", entry: "Free", img: "/utravel/mathura.png", desc: "A sacred sandstone hill associated with Lord Krishna's pastimes. Visitors often perform parikrama (circumambulation) around it." }
+    { name: "Shri Krishna Janmabhoomi", type: "Temple", timings: "5:00 AM - 12:00 PM, 4:00 PM - 9:30 PM", entry: "Free", img: "/utravel/place_janmabhoomi_1777663182147.png", desc: "The sacred birthplace of Lord Krishna. A highly revered complex consisting of a prison cell and magnificent temples." },
+    { name: "Dwarkadhish Temple", type: "Heritage", timings: "6:30 AM - 10:30 AM, 4:00 PM - 7:00 PM", entry: "Free", img: "/utravel/place_dwarkadhish_1777663198798.png", desc: "One of the oldest and largest temples in Mathura, famous for its stunning architecture and vibrant aarti." },
+    { name: "Vishram Ghat", type: "Culture", timings: "Open 24 hours (Evening Aarti at 7 PM)", entry: "Free", img: "/utravel/place_vishramghat_1777663214247.png", desc: "The most important ghat along the river Yamuna, where Lord Krishna is believed to have rested." },
+    { name: "Govardhan Hill", type: "Nature & Spiritual", timings: "Open 24 hours", entry: "Free", img: "/utravel/place_govardhan_1777663236974.png", desc: "A sacred sandstone hill associated with Lord Krishna's pastimes. Visitors often perform parikrama (circumambulation) around it." }
   ],
   agra: [
-    { name: "Taj Mahal", type: "World Wonder", timings: "Sunrise to Sunset (Closed Fridays)", entry: "₹50 (Indians), ₹1100 (Foreigners)", img: "/utravel/agra.png", desc: "The iconic ivory-white marble mausoleum built by Mughal Emperor Shah Jahan for his favorite wife, Mumtaz Mahal." },
-    { name: "Agra Fort", type: "Monument", timings: "6:00 AM - 6:00 PM", entry: "₹40 (Indians), ₹550 (Foreigners)", img: "/utravel/agra.png", desc: "A UNESCO World Heritage site, this massive red sandstone fort was the main residence of the emperors of the Mughal Dynasty." },
-    { name: "Fatehpur Sikri", type: "Heritage", timings: "6:00 AM - 6:00 PM", entry: "₹40 (Indians), ₹550 (Foreigners)", img: "/utravel/agra.png", desc: "The abandoned royal city founded by Emperor Akbar, boasting some of the finest examples of Mughal architecture." },
-    { name: "Mehtab Bagh", type: "Nature", timings: "6:00 AM - 6:00 PM", entry: "₹25 (Indians), ₹300 (Foreigners)", img: "/utravel/agra.png", desc: "A beautiful garden complex situated on the opposite bank of the Yamuna River, offering spectacular sunset views of the Taj Mahal." }
+    { name: "Taj Mahal", type: "World Wonder", timings: "Sunrise to Sunset (Closed Fridays)", entry: "₹50 (Indians), ₹1100 (Foreigners)", img: "/utravel/place_tajmahal_1777663252249.png", desc: "The iconic ivory-white marble mausoleum built by Mughal Emperor Shah Jahan for his favorite wife, Mumtaz Mahal." },
+    { name: "Agra Fort", type: "Monument", timings: "6:00 AM - 6:00 PM", entry: "₹40 (Indians), ₹550 (Foreigners)", img: "/utravel/place_agrafort_1777663266241.png", desc: "A UNESCO World Heritage site, this massive red sandstone fort was the main residence of the emperors of the Mughal Dynasty." },
+    { name: "Fatehpur Sikri", type: "Heritage", timings: "6:00 AM - 6:00 PM", entry: "₹40 (Indians), ₹550 (Foreigners)", img: "/utravel/place_fatehpur_1777663290748.png", desc: "The abandoned royal city founded by Emperor Akbar, boasting some of the finest examples of Mughal architecture." },
+    { name: "Mehtab Bagh", type: "Nature", timings: "6:00 AM - 6:00 PM", entry: "₹25 (Indians), ₹300 (Foreigners)", img: "/utravel/place_mehtab_1777663306050.png", desc: "A beautiful garden complex situated on the opposite bank of the Yamuna River, offering spectacular sunset views of the Taj Mahal." }
   ],
   delhi: [
-    { name: "Red Fort", type: "Monument", timings: "9:30 AM - 4:30 PM (Closed Mondays)", entry: "₹35 (Indians), ₹500 (Foreigners)", img: "/utravel/delhi.png", desc: "A historic fort in the city center that served as the main residence of the Mughal Emperors. Famous for its massive red sandstone walls." },
-    { name: "Qutub Minar", type: "Heritage", timings: "7:00 AM - 5:00 PM", entry: "₹35 (Indians), ₹550 (Foreigners)", img: "/utravel/delhi.png", desc: "A towering 73-meter high victory tower and UNESCO World Heritage site featuring intricate Islamic architecture." },
-    { name: "India Gate", type: "Monument", timings: "Open 24 hours", entry: "Free", img: "/utravel/delhi.png", desc: "An iconic 42m-high war memorial arch honoring Indian soldiers, surrounded by lush lawns perfect for evening strolls." },
-    { name: "Lotus Temple", type: "Spiritual", timings: "9:00 AM - 5:30 PM (Closed Mondays)", entry: "Free", img: "/utravel/delhi.png", desc: "A Bahá'í House of Worship notable for its stunning flower-like shape. Open to all, regardless of religion." }
+    { name: "Red Fort", type: "Monument", timings: "9:30 AM - 4:30 PM (Closed Mondays)", entry: "₹35 (Indians), ₹500 (Foreigners)", img: "/utravel/place_redfort_1777663323019.png", desc: "A historic fort in the city center that served as the main residence of the Mughal Emperors. Famous for its massive red sandstone walls." },
+    { name: "Qutub Minar", type: "Heritage", timings: "7:00 AM - 5:00 PM", entry: "₹35 (Indians), ₹550 (Foreigners)", img: "/utravel/place_qutub_1777663342950.png", desc: "A towering 73-meter high victory tower and UNESCO World Heritage site featuring intricate Islamic architecture." },
+    { name: "India Gate", type: "Monument", timings: "Open 24 hours", entry: "Free", img: "/utravel/place_indiagate_1777663358994.png", desc: "An iconic 42m-high war memorial arch honoring Indian soldiers, surrounded by lush lawns perfect for evening strolls." },
+    { name: "Lotus Temple", type: "Spiritual", timings: "9:00 AM - 5:30 PM (Closed Mondays)", entry: "Free", img: "/utravel/place_lotustemple_1777663374212.png", desc: "A Bahá'í House of Worship notable for its stunning flower-like shape. Open to all, regardless of religion." }
   ]
 };
 
